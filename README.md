@@ -20,4 +20,4 @@ https://github.com/tsayen/dom-to-image
  
 If you can do better, please do! It's totally free. Enjoy!
  
-Get to know me: isneuu.com
+Get to know me: https://isneuu.com
