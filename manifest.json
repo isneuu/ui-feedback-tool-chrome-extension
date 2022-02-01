@@ -1,0 +1,32 @@
+{
+    "name": "UI Feedback",
+    "version": "1",
+    "manifest_version": 2,
+    "description": "A tool that lets you select html and copy screenshot to clipboard.",
+    "homepage_url": "https://isneuu.com",
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": true
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "css": ["inject.css"],
+        "js": ["dom-to-img.js"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "Start pointing!"
+    },    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+  },
+    "permissions": [
+      "https://*/*",
+      "http://*/*",
+      "tabs"
+    ]
+  }
